@@ -1,5 +1,5 @@
-import { Request, Response } from 'express'
-import { createCategoryService, readRealEstateByCategoryService, readCategoriesService } from '../services/categories.service'
+import { Request, Response } from "express"
+import { createCategoryService, readRealEstateByCategoryService, readCategoriesService } from "../services/categories.service"
 
 export const createCategoryController = async (req: Request, res: Response): Promise<Response> => {
     const category = await createCategoryService(req.body)

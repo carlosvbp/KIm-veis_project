@@ -1,5 +1,5 @@
-import { Request, Response } from 'express'
-import { createRealEstateService, readRealEstatesService } from '../services/realEstates.service'
+import { Request, Response } from "express"
+import { createRealEstateService, readRealEstatesService } from "../services/realEstates.service"
 
 export const createRealEstateController = async (req: Request, res: Response): Promise<Response> => {
     const realEstate = await createRealEstateService(req.body)
